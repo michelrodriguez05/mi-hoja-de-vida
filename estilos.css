@@ -678,14 +678,5 @@ body{
     
 }
     
-@media (min-width: 768px) and (max-width: 1024px) {
-    .main-container {
-        flex-direction: row;
-        align-items: wrap;
-    }
-    .column {
-        flex: 1 1 45%;
-        max-width: 0; /* Ancho máximo para pantallas medianas */
-    }
-}
+
     
