@@ -5,39 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hoja de vida Michel rodriguez</title>
     <link rel="stylesheet" href="./estilos.css">
+
 </head>
 <body>
-    <div class="Container">
-    <aside class="sidebar">
-    <div class="columna izquierda">
-    <img>
-    <h1>Michel Lorena <br>Rodriguez Rubio</h1>
-    <p>Desarrolladora de software en Formacion</p>
+    <header class="cv-header">
+    <div class="name ">
+    <img src="img/Imagen cv.jpg" alt="Mi foto" class="imagen-circular">
+    <div class="primero">
+    <h1 id="nombre">Michel Lorena <br>Rodriguez Rubio</h1>
+    <p class="descrip">Desarrolladora de software en Formacion</p></div></div>
+    </header>
 
-    <section class="contacto">
-        <h2 class="titulo-con-barra"> Contacto </h2>
+
+    <section >
+        <div class="titulo-contacto">
+        <h2 > Contacto </h2></div>
+        <div class="cuadro-contacto">
         <strong>Correo:</strong>
         <p>michelrubio570@gmail.com</p>
         <strong>Telefono:</strong>
         <p>(+57) 320 425 5157</p>
         <strong>Ubicación:</strong>
         <p>Bucaramanga, Colombia</p>
-        <a href="https://github.com/michelrodriguez05" target="_blank" >Github</a>
+        <a href="https://github.com/michelrodriguez05" target="_blank" >Github</a></div>
     </section>
 
-    <section class="habilidades">
-        <h2>Habilidades Tecnicas</h2><br>
-        <ul>
-            <li>HTML , CSS</li>
-            <li>PYTHON</li>
-            <li>PSEUDOCODIGO</li>
-            <li>SCRUM</li>
-            
-        </ul>
-    </section>
+    <h2 class="titulo-habi-tec">Habilidades Técnicas</h2>
 
-    <section class="habilidades emocionales">
-        <h2>Habilidades Empocionales</h2><br>
+    <div class="carrusel-container">
+      <div class="carrusel">
+        <div class="habilidad">
+          <img src="./img/imagen html.png" alt="HTML">
+          <p>HTML</p>
+        </div>
+        <div class="habilidad">
+          <img src="./img/imagen css.png" alt="CSS">
+          <p>CSS</p>
+        </div>
+        <div class="habilidad">
+          <img src="./img/imagen python.png" alt="Python">
+          <p>Python</p>
+        </div>
+        <div class="habilidad">
+          <img src="img/imagen pseudo.png" alt="Pseudocódigo">
+          <p>Pseudocódigo</p>
+        </div>
+        <div class="habilidad">
+          <img src="img/imagen scrum.png" alt="Scrum">
+          <p>Scrum</p>
+        </div>
+      </div>
+    </div>
+    
+
+    <section >
+        <div class="titulo-habi-emocionales">
+        <h2>Habilidades Empocionales</h2>
+        </div>
+        <div class="cuadro-habi-emocionales">
         <ul>
             <li>Trabajo en equipo</li>
             <li>Adaptabilidad</li>
@@ -46,44 +71,46 @@
             <li>Resolucion de problemas</li>
             <li>Comunicación</li>
             <li>Creatividad</li>
-        </ul>
+        </ul></div>
     </section> 
-    </aside>
-    </div>
+    
 
-<main class="content">
-        <div class="columna derecha"></div>
-        <p>Desarrolladora de software en Formacion</p>
-    <section class="ACERCA DE MI">
-        <h2>ACERCA DE MI </h2>
+    <section >
+    <div class="titulo-acerca-de-mi">
+        <h2>Acerca de Mi </h2></div>
+        <div class="cuadro-acerca">
         <p>Soy una desarrolladora de software en formación,
             apasionado por crear soluciones prácticas a través
             del código. Me destaco por mi compromiso, trabajo
             en equipo y habilidades para adaptarme a nuevos
             retos. Me interesa combinar la técnica con la empatía,
             aportando valor real a los proyectos en los que
-            participo.</p>
-    </section>
+            participo.</p></div> </section>
     
-    <section class="experiencia">
-        <h2>Proyectos</h2>
-        <h3>Sistema de Gestion para Panaderia - Campuslands - 2025</h3>
+    <section>
+        <div class="titulo-proyecto">
+        <h2>Proyectos</h2></div>
+        <div class="cuadro-panaderia">
+        <h3 class="subtitulo-panaderia">Sistema de Gestion para Panaderia - Campuslands - 2025</h3>
         <p>Desarrolle un Sistema para getionar productos,
             pedidos e inventarion con JSON y codigo mudular para garantizar 
             el control del inventario y la gestion en general para mejorar la experiencia
-            del usuario y la eficiencia en la gestion de los productos.</p>
-        <h3>Proyecto Social - Campuslands - 2025</h3>
-        <p>(agragar descripsion)</p>
+            del usuario y la eficiencia en la gestion de los productos.</p></div>
+        <div class="cuadro-proyecto-soc">
+        <h3 class="subtitulo-proyecto-social">Proyecto Social - Campuslands - 2025</h3>
+        <p>(agragar descripsion)</p><div>
     </section>
 
-    <section class="fomacion">
-        <h2>Formacion Academica </h2>
+    <section >
+        <div class="titulo-formacion-academica ">
+        <h2>Formacion Academica </h2></div>
+        <div class="cuadro-formacion-academica">
         <ul>
             <li>Bachiller Tecnico en Operaciones Comerciales y Financieras.</li>
             <p>- Institucion Educativa Técnico Comercial José Eustasio (2023)</p><br>
             <li>Tecnico laboral Desarrollador de software</li>
             <p>- Campuslands (2025)</p>
-             </ul>
+             </ul></div>
     </section>
 
     <section class="idiomas">
@@ -92,10 +119,10 @@
             <li>Español - Nativo</li>
             <li>Ingles - A1</li>
     </section>
-    </div>
+
     
-</main>
-</div>
+
+
     
 </body>
 </html>

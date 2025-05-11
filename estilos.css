@@ -1,0 +1,490 @@
+@import url(/fonts/Bebas-Regular.otf);
+@import url(/Philosopher-BoldItalic.ttf);
+
+.name{
+    width: 100%;
+    height: 100%;
+    background: #623CEA;
+    margin-top: 0px;
+    display: flex;
+    right: 50px;
+    justify-content: flex-start;
+    gap: 20px;
+    padding: 20px;
+}
+
+
+.cv-header{
+    display: flex;
+    align-items: center;
+}
+
+
+
+body{
+    background: #edeff0;
+    margin: 0px;
+}
+
+
+#nombre{
+     margin-top: 40px; 
+     color: white; 
+    font-size: 50px;
+    font-family: 'titulos';
+}
+
+.name .descrip{
+    color: white;
+    font-size: 25px;
+    margin: 10px;
+    font-family: 'texto';
+    
+}
+
+
+.imagen-circular {
+    width: 150px;        /* tamaño deseado */
+    height: 150px;
+    border-radius: 50%;  /* esto la hace circular */        
+    object-fit: cover;   /* para que se recorte bien */
+    border: white 5px solid;
+    aspect-ratio: 1/1;
+    float: left;
+    margin-right: 40px;
+    margin-top: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.imagen-circular:hover {
+    transform: scale(1.1); /* agranda un poco */
+    box-shadow: 0 0 30px rgba(247, 244, 244, 0.3);
+}
+
+
+
+.titulo-acerca-de-mi{
+    background-color: #623CEA;
+    color: white;
+    padding: 1px 50px;
+    border-radius: 25px;
+    width: fit-content;
+    margin: 30xp auto 10px auto;
+    margin-left: 15px;
+    margin-right: 15px;
+    box-shadow: 0 4xp 8xp rgba(0, 0, 0, 0.1);
+    font-family: "titulos";
+    
+
+} 
+.titulo-acerca-de-mi:hover:hover{
+    transform: scale(1.03);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.cuadro-acerca{
+    background-color: #C6D4FF;
+    color: black;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    font-family: 'texto';
+    font-size: 20px;
+    line-height: 1.5;
+}
+.cuadro-acerca:hover{
+    transform: scale(1.03);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.titulo-contacto{
+    background-color: #623CEA;
+    color: white;
+    padding: 1px 50px;
+    border-radius: 25px;
+    width: fit-content;
+    margin: 30xp auto 10px auto;
+    margin-top: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    
+    box-shadow: 0 4xp 8xp rgba(0, 0, 0, 0.1);
+    font-family: "titulos";
+
+}
+
+.titulo-contacto:hover{
+    transform: scale(1.03);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.cuadro-contacto{
+    background-color: #C6D4FF;
+    color: black;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-family: 'texto';
+    font-size: 20px;
+}
+.cuadro-contacto:hover{
+    transform: scale(1.03);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+.titulo-habi-emocionales{
+    background-color: #623CEA;
+    color: white;
+    padding: 1px 50px;
+    border-radius: 25px;
+    width: fit-content;
+    margin: 30xp auto 10px auto;
+    margin-top: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    box-shadow: 0 4xp 8xp rgba(0, 0, 0, 0.1);
+    font-family: "titulos";
+
+}
+
+.titulo-habi-emocionales:hover{
+    transform: scale(1.03);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.cuadro-habi-emocionales{
+    background-color: #C6D4FF;
+    color: black;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 20px;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-family: 'texto';
+    font-size: 20px;
+}
+.cuadro-habi-emocionales:hover{
+    transform: scale(1.03);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+.titulo-proyecto{
+    background-color: #623CEA;
+    color: white;
+    padding: 1px 50px;
+    border-radius: 25px;
+    width: fit-content;
+    margin: 30xp auto 10px auto;
+    margin-top: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    
+    box-shadow: 0 4xp 8xp rgba(0, 0, 0, 0.1);
+    font-family: "titulos";
+
+}
+.titulo-proyecto:hover{
+    transform: scale(1.03);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.cuadro-panaderia{
+    background-color: #C6D4FF;
+    color: black;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 20px;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-family: 'texto';
+    font-size: 20px;
+}
+.cuadro-panaderia:hover{
+    transform: scale(1.03);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.subtitulo-panaderia{
+    background-color: #623CEA;
+    color: rgb(224, 224, 248);
+    padding: 2px 60px;
+    border-radius: 25px;
+    width: fit-content;
+    margin: 30xp auto 10px auto;
+    margin-top: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    
+    box-shadow: 0 4xp 8xp rgba(0, 0, 0, 0.1);
+    font-family: "titulos";
+
+}
+
+.cuadro-proyecto-soc{
+    background-color: #C6D4FF;
+    color: black;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 20px;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-family: 'texto';
+    font-size: 20px;
+
+}
+.cuadro-proyecto-soc:hover{
+    transform: scale(1.03);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.subtitulo-proyecto-social{
+    background-color: #623CEA;
+    color: rgb(224, 224, 248);
+    padding: 2px 60px;
+    border-radius: 25px;
+    width: fit-content;
+    margin: 30xp auto 10px auto;
+    margin-top: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    
+    box-shadow: 0 4xp 8xp rgba(0, 0, 0, 0.1);
+    font-family: "titulos";
+}
+
+.titulo-formacion-academica{
+    background-color: #623CEA;
+    color: white;
+    padding: 1px 50px;
+    border-radius: 25px;
+    width: fit-content;
+    margin: 30xp auto 10px auto;
+    margin-top: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    
+    box-shadow: 0 4xp 8xp rgba(0, 0, 0, 0.1);
+    font-family: "titulos";
+
+}
+.titulo-formacion-academica:hover{
+    transform: scale(1.03);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.cuadro-formacion-academica{
+    background-color: #C6D4FF;
+    color: black;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 20px;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-family: 'texto';
+    font-size: 20px;
+
+}
+.cuadro-formacion-academica:hover{
+    transform: scale(1.03);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+
+}
+
+
+.titulo-habi-tec{
+    background-color: #623CEA;
+    color: white;
+    padding: 1px 50px;
+    border-radius: 25px;
+    width: fit-content;
+    margin: 30xp auto 10px auto;
+    margin-top: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    
+    box-shadow: 0 4xp 8xp rgba(0, 0, 0, 0.1);
+    font-family: "titulos";
+
+}
+.titulo-habi-tec:hover{
+    transform: scale(1.03);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+.carrusel-container {
+    overflow-x: auto;
+    padding: 10px;
+    margin: 20px auto;
+    max-width: 100%;
+  }
+  
+  .carrusel {
+    display: flex;
+    gap: 20px;
+    transition: transform 0.3s ease;
+    padding: 10px;
+  }
+  
+  .habilidad {
+    min-width: 150px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .habilidad img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin-bottom: 10px;
+  }
+  
+  .habilidad:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  }
+  
+  .habilidad p {
+    margin: 0;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+@media (max-width: 768px) {
+    .name {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 10px;
+    }
+    .imagen-circular {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .cv-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .titulo-acerca-de-mi{
+        margin: 20px auto 10px auto;
+        padding: 10px 15px;
+        font-size: 20px;   
+    }
+    .cuadro-acerca{
+        padding: 15px;
+        font-size: 1rem
+        
+    }
+    .titulo-contacto{
+        margin: 20px auto 10px auto;
+        padding: 10px 15px;
+        font-size: 20px;   
+    }
+    .cuadro-contacto{
+        padding: 15px;
+        font-size: 1rem
+    }
+    .titulo-habi-emocionales{
+        margin: 20px auto 10px auto;
+        padding: 10px 15px;
+        font-size: 20px;   
+    }
+    .cuadro-habi-emocionales{
+        padding: 15px;
+        font-size: 1rem
+    }
+
+    .titulo-proyecto{
+        margin: 20px auto 10px auto;
+        padding: 10px 15px;
+        font-size: 20px;   
+    }
+    .cuadro-panaderia{
+        padding: 15px;
+        font-size: 1rem
+    }
+    .subtitulo-panaderia{
+        margin: 20px auto 10px auto;
+        padding: 10px 15px;
+        font-size: 20px;   
+    }
+    .cuadro-proyecto-soc{
+        padding: 15px;
+        font-size: 1rem
+    }
+    .subtitulo-proyecto-social{
+        margin: 20px auto 10px auto;
+        padding: 10px 15px;
+        font-size: 20px;   
+    }
+    .titulo-habi-tec{
+        margin: 20px auto 10px auto;
+        padding: 10px 15px;
+        font-size: 20px;   
+    }
+
+}
+
+    
