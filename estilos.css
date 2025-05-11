@@ -69,6 +69,7 @@ body{
     border-radius: 25px;
     width: fit-content;
     margin: 30xp auto 10px auto;
+    margin-top: 20px;
     margin-left: 15px;
     margin-right: 15px;
     box-shadow: 0 4xp 8xp rgba(0, 0, 0, 0.1);
@@ -124,7 +125,7 @@ body{
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-.cuadro-contacto{
+.contacto{
     background-color: #C6D4FF;
     color: black;
     border-radius: 20px;
@@ -139,10 +140,17 @@ body{
     font-family: 'texto';
     font-size: 20px;
 }
-.cuadro-contacto:hover{
+.contacto:hover{
     transform: scale(1.03);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
+.icono {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 8px;
+  }
+  
 
 
 .titulo-habi-emocionales{
@@ -346,19 +354,23 @@ body{
 }
 
 
+
+
 .carrusel-container {
     overflow-x: auto;
     padding: 10px;
     margin: 20px auto;
     max-width: 100%;
+    scroll-behavior: smooth;
   }
   
   .carrusel {
     display: flex;
     gap: 20px;
-    transition: transform 0.3s ease;
     padding: 10px;
+    transition: transform 0.3s ease;
   }
+  
   
   .habilidad {
     min-width: 150px;
@@ -368,6 +380,8 @@ body{
     text-align: center;
     padding: 15px;
     transition: transform 0.3s, box-shadow 0.3s;
+    font-family: 'texto';
+    flex: 0 0 auto;
   }
   
   .habilidad img {
@@ -387,29 +401,123 @@ body{
     font-weight: bold;
     font-size: 1rem;
   }
+  .titulo-idiomas{
+    background-color: #623CEA;
+    color: white;
+    padding: 1px 50px;
+    border-radius: 25px;
+    width: fit-content;
+    margin: 30xp auto 10px auto;
+    margin-top: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    
+    box-shadow: 0 4xp 8xp rgba(0, 0, 0, 0.1);
+    font-family: "titulos";
+}
+.titulo-idiomas:hover{
+    transform: scale(1.03);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.subtitulo-esp{
+    color: rgb(25, 25, 27);
+    padding: 2px 60px;
+    border-radius: 25px;
+    width: fit-content;
+    margin: 30xp auto 10px auto;
+    margin-top: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin: auto;
+    margin-bottom: 20px;
+    
+    box-shadow: 0 4xp 8xp rgba(0, 0, 0, 0.1);
+    font-family: "titulos";}
+
+.subtitulo-ing{
+    color: rgb(25, 25, 27);
+    padding: 2px 60px;
+    border-radius: 25px;
+    width: fit-content;
+    margin: 30xp auto 10px auto;
+    margin-top: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin: auto;
+    margin-bottom: 20px;
+    
+    box-shadow: 0 4xp 8xp rgba(0, 0, 0, 0.1);
+    font-family: "titulos";}
+
+  
+  .lenguaje {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 20px 0;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-family: 'texto';
+    
+  }
+  
+  .bandera {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+    border: 2px solid #ffffff;
+    margin-left: 20px;
+  }
+  
+  .bandera img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .barra {
+    background-color: #e0e0e0;
+    border-radius: 25px;
+    width: 250px;
+    height: 20px;
+    position: relative;
+    overflow: hidden;
+    margin: center;
+  }
+  
+  .progreso {
+    
+    background-color: #5d4bc5;
+    height: 100%;
+    text-align: right;
+    padding-right: 10px;
+    color: white;
+    font-weight: bold;
+    border-radius: 25px;
+    line-height: 20px;
+    transition: width 1s ease;
+
+  }
   
 
+  .footer {
+    background-color: #623CEA;
+    text-align: center;
+    padding: 15px;
+    font-size: 1rem;
+    color: #f1e9e9;
+    font-family: 'texto';
+    margin-top: 40px;
+    border-top: 1px solid #ddd;
+  }
+  
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      
+  
+  
+    
 @media (max-width: 768px) {
     .name {
         flex-direction: column;
@@ -433,6 +541,10 @@ body{
         font-size: 20px;   
     }
     .cuadro-acerca{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: auto;
         padding: 15px;
         font-size: 1rem
         
@@ -484,6 +596,56 @@ body{
         padding: 10px 15px;
         font-size: 20px;   
     }
+    .carrusel{
+        height: 200px;
+    }
+    .carrusel-container {
+        padding: 5px;
+        margin: 10px auto;
+    }
+    .habilidad {
+        min-width: 100px;
+        padding: 10px;
+        
+    }
+    .titulo-idiomas{
+        margin: 20px auto 10px auto;
+        padding: 10px 15px;
+        font-size: 20px;   
+    }
+    .titulo-formacion-academica{
+        margin: 20px auto 10px auto;
+        padding: 10px 15px;
+        font-size: 20px;   
+    }
+    
+    .cuadro-formacion-academica{
+        padding: 15px;
+        font-size: 1rem
+    }
+    .titulo-idiomas{
+        margin: 20px auto 10px auto;
+        padding: 10px 15px;
+        font-size: 20px;   
+    }
+    .bandera {
+        width: 40px;
+        height: 40px;
+    }
+    .barra {
+        width: 200px;
+    }
+    .progreso {
+        width: 100%;
+    }
+    .progreso {
+        font-size: 0.8rem;
+    }
+    .lenguaje {
+        font-size: 0.9rem;
+    }
+
+
 
 }
 
